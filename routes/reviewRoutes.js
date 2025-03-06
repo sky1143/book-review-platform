@@ -1,7 +1,8 @@
 const express = require('express')
-const router = express.Router();
-const {getReview, submitReview } = require('../controllers/reviewController'); 
+const { getReview, submitReview } = require('../controllers/reviewController');
 const { secure } = require('../middleware/authmiddleware');
+
+const router = express.Router();
 
 
 router.get('/', getReview);

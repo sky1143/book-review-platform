@@ -1,6 +1,6 @@
 const express = require('express');
-const { secure } = require('../middleware/authmiddleware');
 const { getUserProfile, updateUserProfile } = require('../controllers/userConntroller')
+const { secure } = require('../middleware/authmiddleware');
 const router = express.Router();
 
 router.get('/:id', secure, getUserProfile);
