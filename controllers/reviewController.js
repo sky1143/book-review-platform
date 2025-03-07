@@ -1,6 +1,6 @@
 const Review = require('../models/review')
 
-const getreviews = async (req, res) => {
+const getReview = async (req, res) => {
     try {
         const reviews = await Review.find()
         if (reviews === 0) {
@@ -13,7 +13,7 @@ const getreviews = async (req, res) => {
     }
 }
 
-const submitreview = async (req, res) => {
+const submitReview = async (req, res) => {
     try {
         const { bookId, reviewText } = req.body;
         if (!bookId || !reviewText) {
@@ -28,4 +28,4 @@ const submitreview = async (req, res) => {
     }
 }
 
-module.exports = { getreviews, submitreview };
+module.exports = { getReview, submitReview };

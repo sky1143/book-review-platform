@@ -18,11 +18,24 @@ This is the backend for the **Book Review Platform**, built with Node.js and Exp
 ## 📂 Folder Structure
 ```
 Backend/
-├── models/        # Database models
-├── routes/        # API routes
-├── controllers/   # Business logic
 ├── config/        # Configuration files (e.g., DB connection)
+│   ├── db.js
+├── controllers/   # Business logic
+│   ├── authController.js
+│   ├── bookController.js
+│   ├── reviewController.js
+│   ├── userController.js
 ├── middleware/    # Authentication & validation middleware
+│   ├── authMiddleware.js
+├── models/        # Database models
+│   ├── book.js
+│   ├── review.js
+│   ├── user.js
+├── routes/        # API routes
+│   ├── authRoutes.js
+│   ├── bookRoutes.js
+│   ├── reviewRoutes.js
+│   ├── userRoutes.js
 ├── .env           # Environment variables (DO NOT COMMIT)
 ├── server.js      # Main entry point
 ├── package.json   # Project dependencies
@@ -76,5 +89,3 @@ This project is licensed under the MIT License.
 ### 🔗 Connect with Me
 📧 **Email**: your-email@example.com  
 🌐 **GitHub**: [sky1143](https://github.com/sky1143)  
-
-
