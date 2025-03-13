@@ -1,0 +1,49 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log
+logs/*.log
+logs/**/*.log
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build files
+dist/
+build/
+
+# Database
+*.sqlite
+*.db
+*.db-journal
+dump.sql
+
+# VS Code settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# React & Next.js specific
+.next/
+out/
+.cache/
+
+# MongoDB data
+/data/db/
+dump/
+
+# Cloudinary uploads (if saving locally)
+uploads/
+public/uploads/
