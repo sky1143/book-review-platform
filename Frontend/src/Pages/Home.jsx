@@ -6,7 +6,7 @@ const Home = () => {
     <>
     
    
-   <div className="flex flex-col">
+   <div className=" flex flex-col">
   <div className="flex flex-col md:flex-row h-auto md:h-[65vh] bg-pink-50 justify-between items-center p-6 ">
     
     {/* Left Side - Text */}
