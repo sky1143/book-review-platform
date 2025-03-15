@@ -1,3 +1,74 @@
+// import React, { useState } from 'react'
+// import { useParams } from 'react-router-dom'
+// import books from './js/data'
+
+// const BookDetails = () => {
+
+//     const { id } = useParams()
+//     const book = books.find((book) => book.id === parseInt(id))
+
+//     const [reviews, setReviews] = useState(books?.reviews || [])
+//     const [newReview, setNewReview] = useState({
+//         user: '',
+//         comment: '',
+//         rating: ''
+//     })
+
+//     if(!book) return <div>Book not Found</div>
+
+//     const handleChange = (e) => {
+//         const { name, value } = e.target;
+//         setNewReview((prev) => ({
+//             ...prev,
+//             [name]:value
+//         }))
+//     }
+//     const hnadleSubmit = (e) => {
+//         e.preventDefault()
+//         if(newReview.user && newReview.comment && newReview.rating ){
+//             setReviews((prev)=> [...prev && newReview])
+//             setNewReview({ user: '',comment: "", rating: ''});
+//         }
+//     }
+
+//     return (
+
+//         <>
+//         <div>
+
+//         </div>
+        
+//         </>
+        
+//     )
+// }
+
+// export default BookDetails
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import books from '../Pages/js/data';
@@ -68,8 +139,8 @@ const BookDetails = () => {
                 <h2 className='text-lg sm:text-xl font-semibold'>Reviews</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
                     {reviews.map((review, index) => (
-                        <div 
-                            key={index} 
+                        <div
+                            key={index}
                             className='border border-gray-100 p-4 rounded-lg shadow-sm'
                         >
                             <p>

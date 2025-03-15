@@ -74,11 +74,41 @@ const books = [
 
 
 
-const categories = [
+const categoriesFeatures = [
     {
         id: 1,
+        imageUrl: 'https://cdn-icons-png.flaticon.com/512/8635/8635996.png',
+        title:' Arts & Photography',
+        para: 'Shop now',
 
-    }
+    },
+
+    {
+        id: 2,
+        imageUrl:'https://th.bing.com/th/id/R.e0b5a2e36be1a6ed7fb050930204b819?rik=%2bpASqZKu4zwB5g&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fKcn%2fXKX%2fKcnXKXEBi.png&ehk=KIYarE8it%2fqQ%2fpJDglcPKr4s4FglNFvMja8pObiMdOQ%3d&risl=&pid=ImgRaw&r=0',
+        title:'Health in your hand', 
+        para:'Shop now'
+    },
+    {
+        id:3 ,
+        imageUrl:'https://cdn-icons-png.flaticon.com/512/7671/7671546.png',
+        title:' Horror Story',
+        para:'Shop now'
+    },
+    {
+        id: 4,
+        imageUrl:'https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Butterflies-PNG/Blue_and_Purple_Butterfly_PNG_Clipar_Image.png?m=1629783646',
+        title:'Romance',
+        para:'Shop now'
+    },
+    {
+        id: 5,
+        imageUrl:'https://cdn-icons-png.flaticon.com/512/2178/2178197.png',
+        title:' Biography',
+        para:'Shop now'
+    },
+
 ]
 
 export default books
+export {categoriesFeatures}
